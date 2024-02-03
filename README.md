@@ -3,7 +3,7 @@
 This project implements a convolutional neural network (CNN) for the German Traffic Sign Recognition Benchmark using PyTorch. The CNN is trained to recognize traffic signs from images with a specific focus on resizing images to 30x30x3, which is a standard size for image classification tasks.
 
 ## Dataset
-The dataset is organized with different classes representing various traffic signs. The project includes code for filtering and splitting the dataset into training and validation sets.
+The GTSRB dataset can be downloaded directly from [https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html](https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html). The dataset is organized with different classes representing various traffic signs. The project includes code for filtering and splitting the dataset into training and validation sets.
 
 ## Preprocessing
 Images are resized to the specified dimensions, and a train-validation split is performed. The data loading process is enhanced with additional functionalities like filtering CSV files and creating a pickle file for efficient data loading.
@@ -33,3 +33,9 @@ The project evaluates the trained model on a test dataset, providing insights in
 
 ## Note
 - The complete code, including hyperparameter tuning, results, confusion matrix, and classification report, can be found in the Jupyter Notebook file. The notebook provides a detailed walkthrough of the training process, model evaluation, and analysis of results.
+- Before using this project code, ensure the dataset is organized with the following file structure:
+
+```plaintext
+data_dir = './GTSRB'
+train_path = './GTSRB/Final_Training/Images'
+test_path = './GTSRB/Final_Test/Images'
